@@ -1,1 +1,7 @@
-
+input_number:
+  daily_min_battery_level:
+    name: Daily Minimum Battery Levl
+    initial: 100
+    min: 0
+    max: 100
+    step: 0,1
