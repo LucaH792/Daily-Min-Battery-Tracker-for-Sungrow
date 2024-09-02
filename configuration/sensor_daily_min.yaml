@@ -1,4 +1,4 @@
 - sensor:
     - name: "Daily Minimum Battery Level Sensor"
-      state: "{{ states(input_number.daily_min_battery_level) }}"
+      state: "{{ states('input_number.daily_min_battery_level') }}"
       unit_of_measurment: " %"
