@@ -1,6 +1,6 @@
 input_number:
   daily_min_battery_level:
-    name: Daily Minimum Battery Levl
+    name: Daily Minimum Battery Level
     initial: 100
     min: 0
     max: 100
