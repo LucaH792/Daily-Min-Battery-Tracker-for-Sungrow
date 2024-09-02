@@ -3,7 +3,7 @@ trigger:
   - platform: time
     at: "00:00:00"
 action:
-    service: input_number.set_value
+  - service: input_number.set_value
     target:
       entity_id: input_number.daily_min_battery_level
     data:
