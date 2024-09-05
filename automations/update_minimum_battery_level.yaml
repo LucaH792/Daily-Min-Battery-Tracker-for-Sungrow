@@ -1,0 +1,16 @@
+alias: Update Minimum Battery Level
+trigger:
+  - platform: state
+    entity_id: sensor.battery_level
+condition:
+  - condition: template
+    value_tamplate: >
+    {{ states('sensor.battery_level') | float <
+    states('input_number.daily_min_battery_level') | float }}
+action:
+  - service: input_number.set_value
+    target:
+      entity_id: input_number.daily_min_battery_level
+    data:
+      value: "{{ states('sensor.battery_level') | float}}"
+mode: single
