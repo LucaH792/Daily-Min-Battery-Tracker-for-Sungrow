@@ -4,7 +4,7 @@ trigger:
     entity_id: sensor.battery_level
 condition:
   - condition: template
-    value_tamplate: >
+    value_template: >
     {{ states('sensor.battery_level') | float <
     states('input_number.daily_min_battery_level') | float }}
 action:
