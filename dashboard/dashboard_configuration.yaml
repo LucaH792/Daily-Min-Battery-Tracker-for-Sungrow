@@ -1,1 +1,7 @@
-
+type: entities
+entities:
+  - entity: sensor.daily_min_battery_level_sensor
+header:
+  type: graph
+  entity: sensor.daily_min_battery_level_sensor
+  detail: 2
